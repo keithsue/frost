@@ -19,6 +19,7 @@ fn check_tweaked_signing_key() {
         &message,
         SigningParameters {
             tapscript_merkle_root: Some(vec![]),
+            ..Default::default()
         },
     );
 
@@ -51,6 +52,7 @@ fn check_tweaked_sign_with_dkg() {
             b"message",
             SigningParameters {
                 tapscript_merkle_root: Some(vec![]),
+                ..Default::default()
             },
         ),
     );
@@ -65,6 +67,7 @@ fn check_tweaked_sign_with_dealer() {
             b"message",
             SigningParameters {
                 tapscript_merkle_root: Some(vec![]),
+                ..Default::default()
             },
         ),
     );
@@ -83,6 +86,7 @@ fn check_tweaked_sign_with_dealer_and_identifiers() {
             b"message",
             SigningParameters {
                 tapscript_merkle_root: Some(vec![]),
+                ..Default::default()
             },
         ),
     );

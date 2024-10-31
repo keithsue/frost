@@ -623,7 +623,7 @@ where
 
     // Compute the group commitment from signing commitments produced in round one.
     let group_commitment = compute_group_commitment(signing_package, &binding_factor_list)?;
-    let R = <C>::effective_nonce_element(group_commitment.0);
+    let R = group_commitment.0;
 
     // The aggregation of the signature shares by summing them up, resulting in
     // a plain Schnorr signature.
